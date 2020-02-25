@@ -48,6 +48,14 @@ Download File | ```wget https://some/file.zip```
 Ping | ```ping bing.com```
 Check DNS Records | ```dig bing.com```
 
+### HTTP
+
+Operation | Command Example
+--- | ---
+GET Url | ```curl -v https://www.baidu.com```
+POST Url | ```curl -v -d '' https://www.baidu.com```
+OPTIONS Url | ```curl -v -X OPTIONS https://www.baidu.com```
+
 ## Programs and Features
 
 Operation | Command Example
