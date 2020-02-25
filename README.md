@@ -45,6 +45,8 @@ Install Software | ```sudo apt install something```
 Uninstall Software | ```sudo apt remove something```
 Unistall Unused Software | ```sudo apt autoremove```
 List Installed Software | ```sudo apt list someprefix*```
+View "NuGet" Source | ```sudo ls /etc/apt/sources.list.d```
+Remove "NuGet" Source | ```sudo rm -i /etc/apt/sources.list.d/PPA_Name.list```
 
 ## Windows Service
 
@@ -98,8 +100,8 @@ Add commands you want to execute, e.g:
 
 ```bash
 # set .NET Core SDK and Runtime path
-export DOTNET_ROOT=$HOME/dotnet-arm32
-export PATH=$PATH:$HOME/dotnet-arm32
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
 ```
 
 ### Go to Prison
