@@ -53,7 +53,8 @@ Check DNS Records | ```dig bing.com```
 Operation | Command Example
 --- | ---
 GET Url | ```curl -v https://www.baidu.com```
-POST Url | ```curl -v -d '' https://www.baidu.com```
+POST Url | ```curl -v -d 'abc' https://www.baidu.com```
+POST JSON | ```curl -v -d '{ }' -H "Content-Type: application/json" https://www.baidu.com```
 OPTIONS Url | ```curl -v -X OPTIONS https://www.baidu.com```
 
 ## Programs and Features
