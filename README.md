@@ -15,7 +15,7 @@ Unzip File | ```tar zxvf filename.tar.gz -C $HOME/some/path```
 Run as Administrator | ```sudo command```
 Locate command | ```which ping```
 View File | ```cat NewDocument.txt```
-Search Files | ```find ./your-path -name '*.txt'
+Search Files | ```find ./your-path -name '*.txt'```
 
 ## Pipelines
 
