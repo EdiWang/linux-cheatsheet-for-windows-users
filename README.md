@@ -28,7 +28,7 @@ Give input to a command | ```command < in.txt```
 Readonly mode to a command | ```command <> in.txt```
 Redirect the output | ```command > out.txt```
 Redirect the output and error | ```command > out.txt > error.txt```
-Redirect the output and override | ```command >| out.txt```
+Redirect the output and override | ```command >\| out.txt```
 Redirect the output and append | ```command >> out.txt```
 Redirect the output and error | ```command &> out.txt```
 
