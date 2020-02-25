@@ -53,26 +53,27 @@ Operation | Command Example
 Check Service Status | ```sudo systemctl status work996```
 Start a Service | ```sudo systemctl start work996```
 Stop a Service | ```sudo systemctl stop work996```
-Enable a Service | ```sudo systemctl enable work996```
+Register a Service | ```sudo systemctl enable work996```
+Remove a Service | ```sudo systemctl disable work996```
 Create a Service | ```sudo nano /etc/systemd/system/work996.service```
 
 Example of a custom service:
 
 ```bash
 [Unit]
-Description=ASP.NET Core 3.0 App - Empower
+Description=Work 996
 
 [Service]
-WorkingDirectory=/home/pi/dotnet-playground/empower/portable-fdd
-ExecStart=/home/pi/dotnet-arm32/dotnet /home/pi/dotnet-playground/empower/portable-fdd/Empower.dll
+WorkingDirectory=/home/pi/some/dir
+ExecStart=/home/pi/some/dir/work996
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10
 KillSignal=SIGINT
-SyslogIdentifier=dotnet-empower
+SyslogIdentifier=work-996
 User=pi
-Environment=ASPNETCORE_ENVIRONMENT=Production
-Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+Environment=ENV_VAR=SomeValue
+Environment=ANOTHER_ENV_VAR=AnotherValue
 
 [Install]
 WantedBy=multi-user.target
