@@ -18,6 +18,7 @@ Locate command | ```which ping```
 View File | ```cat NewDocument.txt```
 Search Files | ```find . -name '*.txt'```(Search *.txt in current folder)
 View Folder size | ```du -d 3 -h``` (3 is depth)
+Create File | ```touch file```
 
 ## Pipelines
 
