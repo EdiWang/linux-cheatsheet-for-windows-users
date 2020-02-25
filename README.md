@@ -24,7 +24,7 @@ Operation | Pipeline example
 Page view | ```cat NewDocument \| less```
 Search in content | `cat NewDocument \| grep something`
 Count lines | ```cat NewDocument \| wc -l```
-Foreach in lines | ```cat NewDocument \| xargs -L1 echo
+Foreach in lines | ```cat NewDocument \| xargs -L1 echo```
 
 ### Examples
 
