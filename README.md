@@ -192,6 +192,13 @@ dd if=/dev/zero of=/tmp/tmp count=1 bs=1G
 curl https://www.baidu.com/ --output - > baidu.html && cat ./baidu.html
 ```
 
+#### Heat CPU
+
+```bash
+cat /dev/zero > /dev/null & cat /dev/zero > /dev/null & cat /dev/zero > /dev/null & cat /dev/zero > /dev/null & cat /
+dev/zero > /dev/null
+```
+
 ### Go to Prison
 
 ```bash
