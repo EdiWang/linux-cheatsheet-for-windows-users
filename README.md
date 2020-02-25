@@ -19,7 +19,7 @@ Run as Administrator | ```sudo command```
 Product | Example | Note
 --- | --- | ---
 nano | ```nano config.json``` | use Ctrl to invoke short cuts
-micro | ```micro config.json``` | use Ctrl+E for commands, quit for exit, Ctrl + A,S just work like Windows. https://micro-editor.github.io/index.html
+micro | ```micro config.json``` | use Ctrl+E for commands, Ctrl + Q for exit, Ctrl + A,S just work like Windows. https://micro-editor.github.io/index.html
 
 ## Task Manager
 
