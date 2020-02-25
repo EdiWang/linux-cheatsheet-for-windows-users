@@ -24,6 +24,21 @@ Operation | Pipeline example
 Page view | ```cat NewDocument \| less```
 Search in content | `cat NewDocument \| grep something`
 Count lines | ```cat NewDocument \| wc -l```
+Foreach in lines | ```cat NewDocument \| xargs -L1 echo
+
+### Examples
+
+Count total lines of my code
+
+```bash
+find . -name "*.cs" | xargs -L1 cat | wc -l
+```
+
+Pull all repositories:
+
+```bash
+find . -maxdepth 2 -mindepth 2 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && git pull" \;
+```
 
 ## Notepad
 
