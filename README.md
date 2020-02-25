@@ -11,8 +11,17 @@ Show Hidden Files | ```ls -a```
 Delete File | ```rm filename```
 Delete Folder | ```rm foldername -r -f```
 Move File | ```mv filename /some/path```
-Unzip File | ```tar zxf filename.tar.gz -C $HOME/some/path```
+Unzip File | ```tar zxvf filename.tar.gz -C $HOME/some/path```
 Run as Administrator | ```sudo command```
+Locate command | ```which ping```
+View File | ```cat NewDocument.txt```
+
+## Pipelines
+
+Operation | Pipeline example
+``` | ```
+Page view | ```cat NewDocument | less```
+Search in views | ```cat NewDocument | grep something```
 
 ## Notepad
 
