@@ -11,7 +11,8 @@ Show Hidden Files | ```ls -a```
 Delete File | ```rm filename```
 Delete Folder | ```rm foldername -r -f```
 Move File | ```mv filename /some/path```
-Unzip File | ```tar zxvf filename.tar.gz -C $HOME/some/path```
+Unzip File | ```tar zxvf ./file.tar.gz```
+Zip File | ```tar czvf file.tar.gz ./folder```
 Run as Administrator | ```sudo command```
 Locate command | ```which ping```
 View File | ```cat NewDocument.txt```
