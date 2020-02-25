@@ -28,33 +28,11 @@ Search in content | `cat NewDocument \| grep something`
 Count lines | ```cat NewDocument \| wc -l```
 Foreach in lines | ```cat NewDocument \| xargs -L1 echo```
 
-### Examples
-
-Count total lines of my code
-
-```bash
-find . -name "*.cs" | xargs -L1 cat | wc -l
-```
-
-Pull all repositories:
-
-```bash
-find . -maxdepth 2 -mindepth 2 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && git pull" \;
-```
-
 ## Hardware
 
 Operation | Pipeline example
 --- | ---
 Copy by bytes | ```dd if=filesource of=target```
-
-### Examples
-
-Test disk speed
-
-```bash
-dd if=/dev/zero of=/tmp/tmp count=1 bs=1G
-```
 
 ## Notepad
 
@@ -154,6 +132,26 @@ Add commands you want to execute, e.g:
 # set .NET Core SDK and Runtime path
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
+```
+
+### Examples
+
+#### Count total lines of my code
+
+```bash
+find . -name "*.cs" | xargs -L1 cat | wc -l
+```
+
+#### Pull all repositories:
+
+```bash
+find . -maxdepth 2 -mindepth 2 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && git pull" \;
+```
+
+#### Test disk speed
+
+```bash
+dd if=/dev/zero of=/tmp/tmp count=1 bs=1G
 ```
 
 ### Go to Prison
