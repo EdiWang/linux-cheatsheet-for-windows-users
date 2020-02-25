@@ -21,7 +21,8 @@ View File | ```cat NewDocument.txt```
 Operation | Pipeline example
 ``` | ```
 Page view | ```cat NewDocument | less```
-Search in views | ```cat NewDocument | grep something```
+Search in content | ```cat NewDocument | grep something```
+Count lines | ```cat NewDocument | wc -l```
 
 ## Notepad
 
