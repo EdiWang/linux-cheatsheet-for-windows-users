@@ -28,8 +28,8 @@ Give input to a command | ```command < in.txt```
 Readonly mode to a command | ```command <> in.txt```
 Redirect the output | ```command > out.txt```
 Redirect the output and error | ```command > out.txt > error.txt```
-Redirect the output and override | ```command >| out.txt
-Redirect the output and append | ```command >> out.txt
+Redirect the output and override | ```command >| out.txt```
+Redirect the output and append | ```command >> out.txt```
 Redirect the output and error | ```command &> out.txt```
 
 ## File Explorer
@@ -47,7 +47,7 @@ Zip File | ```tar czvf file.tar.gz ./folder```
 Run as Administrator | ```sudo command```
 Locate command | ```which ping```
 View File | ```cat NewDocument.txt```
-Search Files | ```find . -name '*.txt'```(Search *.txt in current folder)
+Search Files | ```find . -name '*.txt'```(Search `*.txt` in current folder)
 View Folder size | ```du -d 3 -h``` (3 is depth)
 Create File | ```touch file```
 
