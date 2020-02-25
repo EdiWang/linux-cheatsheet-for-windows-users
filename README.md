@@ -42,6 +42,20 @@ Pull all repositories:
 find . -maxdepth 2 -mindepth 2 -type d \( ! -name . \) -exec bash -c "cd '{}' && pwd && git pull" \;
 ```
 
+## Hardware
+
+Operation | Pipeline example
+--- | ---
+Copy by bytes | ```dd if=filesource of=target```
+
+### Examples
+
+Test disk speed
+
+```bash
+dd if=/dev/zero of=/tmp/tmp count=1 bs=1G
+```
+
 ## Notepad
 
 Product | Example | Note
@@ -57,10 +71,11 @@ View Logged on Users | ```w```
 View Process List | ```top```
 Kill Process by Name | ```kill $(pidof windowsphone)```
 
-## Internet
+## Network
 
 Operation | Command Example
 --- | ---
+View my IP Address | ```ifconfig```
 Download File | ```wget https://some/file.zip```
 Ping | ```ping bing.com```
 Check DNS Records | ```dig bing.com```
