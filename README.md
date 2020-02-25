@@ -28,14 +28,6 @@ Search in content | `cat NewDocument \| grep something`
 Count lines | ```cat NewDocument \| wc -l```
 Foreach in lines | ```cat NewDocument \| xargs -L1 echo```
 
-## IO
-
-Operation | Pipeline example
-Redirect output | ```>```
-Append output | ```>>```
-Redirect input | ```<```
-Append input | ```<```
-
 ## Hardware
 
 Operation | Pipeline example
