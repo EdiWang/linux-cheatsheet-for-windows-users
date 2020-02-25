@@ -16,6 +16,7 @@ Run as Administrator | ```sudo command```
 Locate command | ```which ping```
 View File | ```cat NewDocument.txt```
 Search Files | ```find ./your-path -name '*.txt'```
+View Folder size | ```du -d 3 -h``` (3 is depth)
 
 ## Pipelines
 
