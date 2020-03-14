@@ -152,6 +152,12 @@ Feature Update | ```sudo apt dist-upgrade```
 
 ## Tricks
 
+### Generate 4 digits random number
+
+```bash
+cat /dev/urandom | tr -dc '0-9' | fold -w 4 | head -n 1
+```
+
 ### Auto run commands on start up
 
 ```bash
