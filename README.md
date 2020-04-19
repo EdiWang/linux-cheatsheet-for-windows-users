@@ -39,9 +39,11 @@ Operation | Command Example
 Show Files (List View) | ```ls```
 Show Files (Detail View) | ```ls -l```
 Show Hidden Files | ```ls -a```
+Copy | ```cp file1.txt file2.txt```
 Delete File | ```rm filename```
 Delete Folder | ```rm foldername -r -f```
 Move File | ```mv filename /some/path```
+Rename File | ```mv file1.txt file3.txt```
 Unzip File | ```tar zxvf ./file.tar.gz```
 Zip File | ```tar czvf file.tar.gz ./folder```
 Run as Administrator | ```sudo command```
@@ -49,7 +51,10 @@ Locate command | ```which ping```
 View File | ```cat NewDocument.txt```
 Search Files | ```find . -name '*.txt'```(Search `*.txt` in current folder)
 View Folder size | ```du -d 3 -h``` (3 is depth)
+View File or Directory Type | ```file somefileordir```
 Create File | ```touch file```
+Search File | ```locate filename```
+Update Windows Search Index | ```sudo updatedb```
 
 ## Pipelines
 
@@ -72,6 +77,14 @@ Product | Example | Note
 --- | --- | ---
 nano | ```nano config.json``` | use Ctrl to invoke short cuts
 micro | ```micro config.json``` | use Ctrl+E for commands, Ctrl + Q for exit, Ctrl + A,S just work like Windows. https://micro-editor.github.io/index.html
+
+## Utilities
+
+Product | Example
+--- | ---
+Calendar | ```cal```
+Get Help (offline) | ```whatis cal```
+Get Help (online) | ```man man```
 
 ## Task Manager
 
